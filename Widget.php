@@ -10,6 +10,7 @@ namespace mata\imperavi;
 use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
+use mata\imperavi\ClipsImperaviRedactorPluginAsset;
 
 /**
  * Imperavi Redactor Widget For Yii2 class file.
@@ -89,8 +90,32 @@ class Widget extends \yii\base\Widget
             echo Html::textarea($this->attribute, $this->value, $this->htmlOptions);
         }
 
+        if (isset($this->options["clips"]))
+            $this->registerClips($this->options["clips"]);
+
         ImperaviRedactorAsset::register($this->getView());
         $this->registerClientScript();
+    }
+
+    private function registerClips($clips) {
+
+        $view = $this->getView();
+
+        ClipsImperaviRedactorPluginAsset::register($view);
+
+        $clipsForJs = [];
+
+        foreach ($clips as $label => $content) {
+
+            if (!strncmp($content, '@', 1)) 
+                $content = file_get_contents(\Yii::getAlias($content) . ".php");
+
+            $clipsForJs[] = array($label, $content);
+        } 
+
+        $js = "RedactorPlugins.clips.items = ". Json::encode($clipsForJs) . ";";
+        $view->registerJs($js);
+
     }
 
     /**

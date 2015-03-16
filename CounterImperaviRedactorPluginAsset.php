@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class CounterImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@mata/imperavi/assets/plugins/counter';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/counter';
     public $js = [
         'counter.js',
     ];

@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class LimiterImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/limiter';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/limiter';
     public $js = [
         'limiter.js',
     ];

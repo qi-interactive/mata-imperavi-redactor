@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class FullscreenImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/fullscreen';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/fullscreen';
     public $js = [
         'fullscreen.js'
     ];

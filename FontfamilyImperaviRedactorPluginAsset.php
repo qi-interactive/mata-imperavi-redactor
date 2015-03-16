@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class FontfamilyImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/fontfamily';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/fontfamily';
     public $js = [
         'fontfamily.js'
     ];

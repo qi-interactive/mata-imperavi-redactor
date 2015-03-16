@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class FontsizeImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/fontsize';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/fontsize';
     public $js = [
         'fontsize.js'
     ];

@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class FilemanagerImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@mata/imperavi/assets/plugins/filemanager';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/filemanager';
     public $js = [
         'filemanager.js',
     ];

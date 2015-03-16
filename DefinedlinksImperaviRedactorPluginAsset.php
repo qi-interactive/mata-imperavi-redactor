@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class DefinedlinksImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@mata/imperavi/assets/plugins/definedlinks';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/definedlinks';
     public $js = [
         'definedlinks.js',
     ];

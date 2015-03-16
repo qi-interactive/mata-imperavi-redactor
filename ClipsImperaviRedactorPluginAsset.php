@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class ClipsImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@mata/imperavi/assets/plugins/clips';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/clips';
     public $js = [
         'clips.js',
     ];

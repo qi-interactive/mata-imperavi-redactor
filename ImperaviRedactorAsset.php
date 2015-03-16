@@ -15,7 +15,7 @@ use yii\web\AssetBundle;
  */
 class ImperaviRedactorAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets';
     public $js = [
         'redactor.js'
     ];
