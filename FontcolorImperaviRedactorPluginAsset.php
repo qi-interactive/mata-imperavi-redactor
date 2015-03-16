@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class FontcolorImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/fontcolor';
+    public $sourcePath = '@mata/imperavi/assets/plugins/fontcolor';
     public $js = [
         'fontcolor.js',
     ];
