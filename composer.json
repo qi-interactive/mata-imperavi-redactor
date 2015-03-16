@@ -1,5 +1,5 @@
 {
-    "name": "qi-interactive/yii2-imperavi-redactor",
+    "name": "mata/mata-imperavi-redactor",
     "description": "Imperavi Redactor WYSIWYG widget (OEM-licensed for Yii 2)",
     "keywords": ["yii", "imperavi redactor", "imperavi"],
     "type": "yii2-extension",
@@ -23,6 +23,6 @@
         "yiisoft/yii2": "*"
     },
     "autoload": {
-        "psr-0": { "yii\\imperavi\\": "" }
+        "psr-0": { "mata\\imperavi\\": "" }
     }
 }
