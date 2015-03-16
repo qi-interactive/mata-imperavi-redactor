@@ -23,6 +23,6 @@
         "yiisoft/yii2": "*"
     },
     "autoload": {
-        "psr-0": { "yii\\imperavi\\": "" }
+        "psr-0": { "mata\\imperavi\\": "" }
     }
 }
