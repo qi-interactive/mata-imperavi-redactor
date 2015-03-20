@@ -48,7 +48,7 @@ RedactorPlugins.clips = function()
 		insert: function(html)
 		{
 			this.selection.restore();
-			this.insert.html(html);
+			this.insert.html(html, false);
 			this.modal.close();
 			this.observe.load();
 		}
