@@ -90,8 +90,10 @@ class Widget extends \yii\base\Widget
             echo Html::textarea($this->attribute, $this->value, $this->htmlOptions);
         }
 
-        if (isset($this->options["clips"]))
+        if (isset($this->options["clips"])) {
+            array_push($this->plugins, 'clips');
             $this->registerClips($this->options["clips"]);
+        }
 
         ImperaviRedactorAsset::register($this->getView());
         $this->registerClientScript();
