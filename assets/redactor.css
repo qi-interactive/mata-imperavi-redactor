@@ -573,6 +573,7 @@ body .redactor-box-fullscreen {
   float: none !important;
   margin: 15px 0 3px 0 !important;
   padding: 0;
+  text-align: left;
 }
 #redactor-modal input[type="radio"],
 #redactor-modal input[type="checkbox"] {
