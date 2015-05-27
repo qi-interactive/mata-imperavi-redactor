@@ -69,3 +69,10 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+
+Changelog
+---------
+
+## 1.0.1-alpha, May 27, 2015
+
+- Z-index for redactor modal updated
