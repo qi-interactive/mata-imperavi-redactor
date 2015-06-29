@@ -73,6 +73,10 @@ to the require section of your `composer.json` file.
 Changelog
 ---------
 
+## 1.0.3, June 29, 2015
+
+- Updated Widget.php: fixed registering assets for plugins
+
 ## 1.0.2, June 29, 2015
 
 - Updated paths for asset bundles: TableImperaviRedactorPluginAsset, TextdirectionImperaviRedactorPluginAsset, TextexpanderImperaviRedactorPluginAsset, VideoImperaviRedactorPluginAsset
