@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 
 class TableImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/table';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/table';
 
     public $js = [
         'table.js',

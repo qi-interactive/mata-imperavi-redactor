@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 
 class VideoImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/video';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/video';
 
     public $js = [
         'video.js',

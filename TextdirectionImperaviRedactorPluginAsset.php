@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class TextdirectionImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/textdirection';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/textdirection';
     public $js = [
         'textdirection.js'
     ];

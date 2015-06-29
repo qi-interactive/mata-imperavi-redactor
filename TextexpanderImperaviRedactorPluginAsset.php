@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class TextexpanderImperaviRedactorPluginAsset extends AssetBundle
 {
-    public $sourcePath = '@yii/imperavi/assets/plugins/textexpander';
+    public $sourcePath = '@vendor/mata/mata-imperavi-redactor/assets/plugins/textexpander';
     public $js = [
         'textexpander.js',
     ];
