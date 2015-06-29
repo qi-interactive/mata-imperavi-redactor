@@ -95,6 +95,10 @@ class Widget extends \yii\base\Widget
             $this->registerClips($this->options["clips"]);
         }
 
+        if (isset($this->options["plugins"])) {
+            $this->plugins = array_merge($this->plugins, $this->options["plugins"]);
+        }
+
         ImperaviRedactorAsset::register($this->getView());
         $this->registerClientScript();
     }
@@ -109,11 +113,11 @@ class Widget extends \yii\base\Widget
 
         foreach ($clips as $label => $content) {
 
-            if (!strncmp($content, '@', 1)) 
+            if (!strncmp($content, '@', 1))
                 $content = file_get_contents(\Yii::getAlias($content) . ".php");
 
             $clipsForJs[] = array($label, $content);
-        } 
+        }
 
         $js = "RedactorPlugins.clips.items = ". Json::encode($clipsForJs) . ";";
         $view->registerJs($js);
@@ -156,11 +160,13 @@ class Widget extends \yii\base\Widget
      */
     protected function registerPlugin($name)
     {
-        $asset = "yii\\imperavi\\" . ucfirst($name) . "ImperaviRedactorPluginAsset";
+        $asset = ucfirst($name) . "ImperaviRedactorPluginAsset";
+        $assetNamespace =  "mata\\imperavi\\" . $asset;
         // check exists file before register (it may be custom plugin with not standard file placement)
-        $sourcePath = Yii::$app->vendorPath . '/asofter/yii2-imperavi-redactor/' . str_replace('\\', '/', $asset) . '.php';
+        $sourcePath = Yii::$app->vendorPath . '/mata/mata-imperavi-redactor/' . str_replace('\\', '/', $asset) . '.php';
+
         if (is_file($sourcePath)) {
-            $asset::register($this->getView());
+            $assetNamespace::register($this->getView());
         }
     }
 }
