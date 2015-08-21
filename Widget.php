@@ -43,7 +43,7 @@ class Widget extends \yii\base\Widget
     /**
      * @var array plugins that you want to use
      */
-    public $plugins = [];
+    public $plugins = ['imagematacms', 'linkmatacms'];
 
     /*
      * @var object model for active text area
