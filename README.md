@@ -73,6 +73,10 @@ to the require section of your `composer.json` file.
 Changelog
 ---------
 
+## 1.0.4, August 21, 2015
+
+- Added matacms plugins: imagematacms (used by default), linkmatacms (used by default), videomatacms, tablematacms
+
 ## 1.0.3, June 29, 2015
 
 - Updated Widget.php: fixed registering assets for plugins
