@@ -90,6 +90,10 @@ class Widget extends \yii\base\Widget
             echo Html::textarea($this->attribute, $this->value, $this->htmlOptions);
         }
 
+        if(!isset($this->options['buttons'])) {
+            $this->options['buttons'] = ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'outdent', 'indent', 'image', 'file', 'link', 'alignment', 'horizontalrule'];
+        }
+
         if (isset($this->options["clips"])) {
             array_push($this->plugins, 'clips');
             $this->registerClips($this->options["clips"]);
