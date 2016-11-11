@@ -73,6 +73,10 @@ to the require section of your `composer.json` file.
 Changelog
 ---------
 
+## 1.0.4.1, November 11, 2016
+
+- Added default buttons in Widget (including 'underline')
+
 ## 1.0.4, August 21, 2015
 
 - Added matacms plugins: imagematacms (used by default), linkmatacms (used by default), videomatacms, tablematacms
